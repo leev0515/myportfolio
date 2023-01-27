@@ -1,0 +1,61 @@
+* {
+  font-family: 'Karla', serif;
+  font-size: 20px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Nav {
+  margin: 50px;
+  list-style-type: none;
+  display: inline-grid;
+  grid-template-columns: auto;
+  align-items: top;
+}
+
+.App:link {
+  text-decoration: none;
+  color: var(--primary-green)
+}
+
+.Homeicon {
+  margin: 50px;
+  list-style-type: none;
+}
+
+.Home {
+  text-align: center;
+  border: 5px solid skyblue;
+  width: 65%;
+  margin: auto;
+  background-color: lightblue;
+}
+
+.Profilepic {
+  text-align: center;
+  margin: auto;
+}
+
+
