@@ -3,6 +3,11 @@
   font-size: 20px;
 }
 
+:root {
+  --primary-blue: #51b3d6;
+  --primary-black: black;
+}
+
 .App {
   text-align: center;
 }
@@ -27,35 +32,45 @@
   color: #61dafb;
 }
 
-.Nav {
-  margin: 50px;
-  list-style-type: none;
-  display: inline-grid;
-  grid-template-columns: auto;
-  align-items: top;
-}
-
 .App:link {
   text-decoration: none;
   color: var(--primary-green)
 }
 
-.Homeicon {
-  margin: 50px;
+.grid-inline {
+  display: block;
+  overflow: hidden;
+  padding: 8px;
+  background-color: #dddddd;
+}
+
+.grid-inline li{
   list-style-type: none;
 }
 
-.Home {
-  text-align: center;
-  border: 5px solid skyblue;
-  width: 65%;
-  margin: auto;
-  background-color: lightblue;
+.home {
+  list-style-type: none;
+  overflow: hidden;
+  display: block;
+  margin: 20px;
 }
 
-.Profilepic {
+.home a {
+  padding: 8px;
+  float: right;
+}
+
+.icon {
+  text-align: left;
+  list-style: none;
+}
+
+.profilepic {
   text-align: center;
   margin: auto;
 }
 
-
+.aboutme {
+  align-items: top;
+  text-align: center;
+}
