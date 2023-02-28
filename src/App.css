@@ -2,46 +2,29 @@
   font-family: 'Karla', serif;
   font-size: 20px;
 }
+@media only screen and (min-width: 1024px) {
+.bg-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: '100vw';
+  height: '100&';
+  background-position: center;
+}
+}
 
 :root {
   --primary-blue: #51b3d6;
   --primary-black: black;
 }
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-.App:link {
-  text-decoration: none;
-  color: var(--primary-green)
-}
-
 .grid-inline {
   display: block;
-  overflow: hidden;
+  grid-auto-flow: row;
   padding: 8px;
-  background-color: #dddddd;
+}
+
+.grid-inline h5 {
+  display: grid;
 }
 
 .grid-inline li{
@@ -50,19 +33,18 @@
 
 .home {
   list-style-type: none;
-  overflow: hidden;
-  display: block;
-  margin: 20px;
-}
-
-.home a {
-  padding: 8px;
-  float: right;
+  grid-template-columns: auto;
+  display: inline-grid;
+  align-items: top;
 }
 
 .icon {
   text-align: left;
   list-style: none;
+}
+
+.image {
+  display: block;
 }
 
 .profilepic {
@@ -72,5 +54,34 @@
 
 .aboutme {
   align-items: top;
+  text-align: center;
+  color: white;
+  letter-spacing: 2px;
+  line-height: 0.7;
+}
+
+.aboutme2 {
+  align-items: top;
+  text-align: center;
+  color: white;
+  letter-spacing: 2px;
+  line-height: 0.7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  color: white;
+}
+
+.row {
+  content: "";
+  display: flex;
+  clear: both;
   text-align: center;
 }
