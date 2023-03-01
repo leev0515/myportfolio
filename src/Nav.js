@@ -5,7 +5,7 @@ import Homeicon from './img/Homeicon.png';
 function Nav() {
     return (
        <nav>
-            <ul className="home">
+            <ul className="grid-inline">
                 <li><Link to="./"><img src={Homeicon} alt="Home Page icon by icons8" /></Link></li>
                 <li><Link to="./">Home</Link></li>
                 <li><Link to="./aboutme">About Me</Link></li>

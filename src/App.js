@@ -1,8 +1,8 @@
 import React from 'react';
 import Nav from './Nav';
-import Aboutme from './Aboutme';
-import Aboutme2 from './Aboutme2';
-import Contacts from './Contacts';
+import Header from './Header';
+import Header2 from './Header2';
+import Footer from './Footer';
 import './App.css';
 import Threecolumns from './Threecolumns';
 import Oregon from './img/Oregon.jpg';
@@ -15,10 +15,10 @@ function App() {
       style={{ backgroundImage: `url(${Oregon})` }}
     >
       <Nav />
-      <Aboutme />
+      <Header />
       <Threecolumns />
-      <Aboutme2 />
-      <Contacts />
+      <Header2 />
+      <Footer />
     </div>
 
     </>
